@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import axios from "axios";
 import "./App.scss";
 import WeatherInfo from "./components/WeatherInfo";
-import WeatherInfo5Days from "./components/WeatherInfo5Days";
+import WeatherInfoDays from "./components/WeatherInfoDays";
 
 function App() {
   const [weather, setWeather] = useState({});
@@ -20,10 +20,10 @@ function App() {
 
     const apiInfo = await axios.get(apiUrl);
 
-    const apiInfo5Days = await axios.get(url5Days);
+    const apiInfoDays = await axios.get(url5Days);
 
     setWeather(apiInfo.data);
-    setWeather5Days(apiInfo5Days.data);
+    setWeather5Days(apiInfoDays.data);
   };
 
   return (
@@ -39,18 +39,21 @@ function App() {
           type="text"
           placeholder="Digite o nome da cidade"
         />
+
         <button className="app-button" onClick={searchCity}>
           Buscar
         </button>
       </div>
 
-      {weather && weather.weather && weather.main ? (
-        <WeatherInfo weather={weather} />
-      ) : null}
+      {weather && weather.weather && weather.main && (
+        <div className="weather-container">
+          <WeatherInfo weather={weather} />
 
-      {weather5Days && weather5Days.list ? (
-        <WeatherInfo5Days weather5Days={weather5Days} />
-      ) : null}
+          {weather5Days && weather5Days.list && (
+            <WeatherInfoDays weather5Days={weather5Days} />
+          )}
+        </div>
+      )}
     </main>
   );
 }

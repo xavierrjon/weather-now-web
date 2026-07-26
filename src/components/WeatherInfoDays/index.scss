@@ -1,0 +1,141 @@
+.weather-info-5-days {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.weather-info-5-days-item {
+  width: 100%;
+  min-height: 135px;
+
+  padding: 22px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  color: #fff;
+
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .forecast-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h3 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .forecast-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .temperature {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .description {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #fff;
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-info-5-days {
+    gap: 14px;
+  }
+
+  .weather-info-5-days-item {
+    min-height: 130px;
+    padding: 18px 20px;
+
+    .forecast-top {
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .forecast-bottom {
+      .temperature {
+        font-size: 0.85rem;
+      }
+
+      .description {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+  
+
+@media (max-width: 480px) {
+  .weather-info-days-title {
+    font-size: 1.3rem;
+  }
+
+  .weather-info-5-days-item {
+    min-height: 115px;
+    padding: 16px 18px;
+
+    .forecast-top {
+      h3 {
+        font-size: 1.05rem;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    .forecast-bottom {
+      flex-direction: row;
+      align-items: flex-end;
+
+      .temperature {
+        font-size: 0.9rem;
+      }
+
+      .description {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
