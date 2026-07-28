@@ -19,7 +19,7 @@
 
   border-radius: 22px;
 
-  background: rgba(255, 255, 255, 0.18);
+  background: #79adbc;
 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -103,11 +103,10 @@
     }
   }
 }
-  
 
 @media (max-width: 480px) {
   .weather-info-days-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .weather-info-5-days-item {

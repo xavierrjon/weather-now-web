@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.scss";
 import WeatherInfo from "./components/WeatherInfo";
 import WeatherInfoDays from "./components/WeatherInfoDays";
+import { ArrowRight, Search } from "lucide-react";
 
 function App() {
   const [weather, setWeather] = useState({});
@@ -33,15 +34,21 @@ function App() {
       </h1>
 
       <div className="app-search">
+        <Search className="search-icon" size={22} />
+
         <input
           className="app-input"
           ref={inputRef}
           type="text"
-          placeholder="Digite o nome da cidade"
+          placeholder="Digite uma cidade"
         />
 
-        <button className="app-button" onClick={searchCity}>
-          Buscar
+        <button
+          className="app-button"
+          onClick={searchCity}
+          aria-label="Buscar cidade"
+        >
+          <ArrowRight size={22} strokeWidth={2.3} />
         </button>
       </div>
 

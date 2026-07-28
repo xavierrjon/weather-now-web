@@ -9,7 +9,7 @@
 
   border-radius: 20px;
 
-  background: rgba(255, 255, 255, 0.181);
+  background: #79adbc;
 
   backdrop-filter: blur(12px);
 
@@ -17,7 +17,14 @@
 
   color: rgb(255, 255, 255);
 
+  transition: all 0.25s ease;
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.105);
+
+  &:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.22);
+  }
 
   .weather-left{
     display:flex;
@@ -105,7 +112,7 @@
 
 @media (max-width:480px){
   .weather-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .weather-card{
