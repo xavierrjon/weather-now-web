@@ -1,15 +1,34 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import "./App.scss";
 import WeatherInfo from "./components/WeatherInfo";
 import WeatherInfoDays from "./components/WeatherInfoDays";
 import { ArrowRight, Search } from "lucide-react";
 
+const isDaytimeByDeviceClock = () => {
+  const currentHour = 9;
+
+  return currentHour >= 6 && currentHour < 18;
+};
+
 function App() {
   const [weather, setWeather] = useState({});
   const [weather5Days, setWeather5Days] = useState({});
+  const [isDaytime, setIsDaytime] = useState(() => isDaytimeByDeviceClock());
 
   const inputRef = useRef();
+
+  useEffect(() => {
+    const updateTheme = () => {
+      setIsDaytime(isDaytimeByDeviceClock());
+    };
+
+    updateTheme();
+
+    const intervalId = window.setInterval(updateTheme, 60 * 1000);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
 
   const searchCity = async () => {
     const city = inputRef.current.value;
@@ -28,7 +47,7 @@ function App() {
   };
 
   return (
-    <main className="app">
+    <main className={`app ${isDaytime ? "app--day" : "app--night"}`}>
       <h1 className="app-title">
         Weather<span>Now</span>
       </h1>

@@ -1,73 +1,109 @@
 # WeatherNow ⛅
 
-Um aplicativo de previsão do tempo moderno e responsivo, desenvolvido como **projeto de estudo** para consolidar conhecimentos em React, componentes reutilizáveis, consumo de APIs e estilização avançada com SCSS.
+Um aplicativo moderno de previsão do tempo desenvolvido em React, que permite consultar informações climáticas em tempo real de qualquer cidade do mundo. A aplicação oferece uma interface intuitiva, responsiva e adaptável ao período do dia, proporcionando uma experiência agradável em qualquer dispositivo.
 
-## ✅ Imagens do Projeto
+---
 
-### Tela Inicial:
-![Tela Inicial](./src/assets/tela-inicial.png)
+## 📸 Imagem do Projeto
 
-### Tela de Previsão:
-![Tela de Previsão](./src/assets/tela-info-cidade.png)
+![Imagem do Projeto](./src/assets/weathernow-foto.png)
 
+---
 
 ## 📋 Sobre o Projeto
 
-**WeatherNow** é uma aplicação que permite aos usuários buscar informações climáticas em tempo real para qualquer cidade do mundo. O projeto foi criado com foco em boas práticas de desenvolvimento, estrutura de componentes, design responsivo e tratamento de erros.
+O **WeatherNow** é uma aplicação web que consome a API da OpenWeatherMap para fornecer informações meteorológicas atualizadas de cidades ao redor do mundo.
 
-### Objetivo de Aprendizado
-- Consolidar conhecimentos em **React Hooks** (useState, useRef)
-- Praticar consumo de APIs externas com **Axios**
-- Implementar **design responsivo** com Grid CSS
-- Criar componentes reutilizáveis e escaláveis
-- Aplicar técnicas avançadas de **SCSS** e hierarquia tipográfica
+O projeto foi desenvolvido utilizando boas práticas de desenvolvimento front-end, componentização, consumo de APIs REST e estilização moderna com SCSS, priorizando desempenho, organização do código e experiência do usuário.
 
-## 🚀 Funcionalidades
+---
 
-- ✅ **Busca de Cidades** — Pesquise por qualquer cidade do mundo
-- ✅ **Clima Atual** — Exibe temperatura, descrição, sensação térmica, umidade e pressão
-- ✅ **Previsão de 5 Dias** — Cards com previsão por dia em grid responsivo
-- ✅ **Ícones de Clima** — Ícones visuais dinâmicos da OpenWeatherMap
-- ✅ **Design Responsivo** — Funciona perfeitamente em mobile, tablet e desktop
+## ✨ Funcionalidades
+
+- 🔍 **Busca de cidades** — Pesquise por qualquer cidade do mundo.
+- 🌡️ **Clima atual** — Exibe temperatura, sensação térmica, umidade, pressão atmosférica e descrição do clima.
+- 📅 **Previsão para os próximos 5 dias** — Visualização organizada em cards responsivos.
+- 🌤️ **Ícones dinâmicos** — Ícones oficiais fornecidos pela OpenWeatherMap.
+- 🌓 **Tema automático** — O sistema alterna automaticamente entre **Modo Claro** durante o dia e **Modo Escuro** durante a noite, proporcionando maior conforto visual.
+- 📱 **Design Responsivo** — Interface adaptada para smartphones, tablets e desktops.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
 | Categoria | Tecnologia | Versão |
-|-----------|-----------|--------|
-| **Frontend Framework** | React | 19.2.5 |
+|-----------|------------|--------|
+| **Frontend** | React | 19.2.5 |
 | **Build Tool** | Vite | 8.0.10 |
 | **HTTP Client** | Axios | 1.15.2 |
-| **Estilização** | SCSS/Sass | 1.99.0 |
+| **Estilização** | SCSS (Sass) | 1.99.0 |
 
-### APIs Utilizadas
-- **OpenWeatherMap** — [https://openweathermap.org/api](https://openweathermap.org/api)
-  - `Weather API` — Clima atual
-  - `Forecast API` — Previsão de 5 dias
+---
 
-## 📦 Instalação & Uso
+## 🌐 APIs Utilizadas
+
+### OpenWeatherMap
+
+Responsável por fornecer todos os dados meteorológicos utilizados na aplicação.
+
+- **Current Weather API** — Clima atual.
+- **5 Day / 3 Hour Forecast API** — Previsão para os próximos dias.
+
+https://openweathermap.org/api
+
+---
+
+## 🚀 Instalação
 
 ### Pré-requisitos
-- Node.js (v16+)
+
+- Node.js 16 ou superior
 - npm ou yarn
 
-### Passo a Passo
+### Clone o repositório
 
-1. **Clone ou navegue para o diretório:**
+```bash
+git clone weather-now-web
+```
+
+### Acesse a pasta
+
 ```bash
 cd WeatherNow
 ```
 
-2. **Instale as dependências:**
+### Instale as dependências
+
 ```bash
 npm install
 ```
 
-3. **Inicie o servidor de desenvolvimento:**
+### Execute o projeto
+
 ```bash
 npm run dev
 ```
 
-4. **Abra no navegador:**
+A aplicação estará disponível em:
+
 ```
 http://localhost:5173
 ```
+
+---
+
+
+## 💡 Destaques do Projeto
+
+- Arquitetura baseada em componentes reutilizáveis.
+- Consumo de APIs REST utilizando Axios.
+- Interface moderna construída com SCSS.
+- Layout totalmente responsivo.
+- Tema adaptável ao horário do dia.
+- Código organizado e de fácil manutenção.
+
+---
+
+## 📄 Licença
+
+Este projeto está disponível sob a licença **MIT**.
