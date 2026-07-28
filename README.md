@@ -4,13 +4,13 @@ Um aplicativo moderno de previsão do tempo desenvolvido em React, que permite c
 
 ---
 
-## 📸 Imagem do Projeto
+## Imagem do Projeto
 
 ![Imagem do Projeto](./src/assets/weathernow-foto.png)
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 O **WeatherNow** é uma aplicação web que consome a API da OpenWeatherMap para fornecer informações meteorológicas atualizadas de cidades ao redor do mundo.
 
@@ -18,7 +18,7 @@ O projeto foi desenvolvido utilizando boas práticas de desenvolvimento front-en
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - 🔍 **Busca de cidades** — Pesquise por qualquer cidade do mundo.
 - 🌡️ **Clima atual** — Exibe temperatura, sensação térmica, umidade, pressão atmosférica e descrição do clima.
@@ -29,7 +29,7 @@ O projeto foi desenvolvido utilizando boas práticas de desenvolvimento front-en
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Categoria | Tecnologia | Versão |
 |-----------|------------|--------|
@@ -40,7 +40,7 @@ O projeto foi desenvolvido utilizando boas práticas de desenvolvimento front-en
 
 ---
 
-## 🌐 APIs Utilizadas
+## APIs Utilizadas
 
 ### OpenWeatherMap
 
@@ -53,7 +53,7 @@ https://openweathermap.org/api
 
 ---
 
-## 🚀 Instalação
+## Instalação
 
 ### Pré-requisitos
 
@@ -63,7 +63,7 @@ https://openweathermap.org/api
 ### Clone o repositório
 
 ```bash
-git clone weather-now-web
+git clone https://github.com/xavierrjon/weather-now-web.git
 ```
 
 ### Acesse a pasta
@@ -93,7 +93,7 @@ http://localhost:5173
 ---
 
 
-## 💡 Destaques do Projeto
+## Destaques do Projeto
 
 - Arquitetura baseada em componentes reutilizáveis.
 - Consumo de APIs REST utilizando Axios.
@@ -104,6 +104,6 @@ http://localhost:5173
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto está disponível sob a licença **MIT**.
