@@ -6,7 +6,7 @@ import WeatherInfoDays from "./components/WeatherInfoDays";
 import { ArrowRight, Search } from "lucide-react";
 
 const isDaytimeByDeviceClock = () => {
-  const currentHour = 9;
+  const currentHour = new Date().getHours();
 
   return currentHour >= 6 && currentHour < 18;
 };
